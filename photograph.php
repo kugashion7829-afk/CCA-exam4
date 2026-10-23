@@ -1,3 +1,5 @@
+<?php require __DIR__ . '/app/offsetPhoto.php'; ?>
+
 <?php require __DIR__ . '/header.php'; ?>
 
 <section id="photographSection" class="lightMove">
@@ -11,35 +13,27 @@
         <hr>
 
         <div class="photograph">
-            <div>
-                <div class="borderDesign photoWrap"><a href="./pages/photo1.php"><img src="./images/about.png"></a></div>
-                <div class="borderDesign photoTitle"><a href="./pages/photo1.php"><h4>私を見つけた日</h4></a></div>
-            </div>
-            <div>
-                <div class="borderDesign photoWrap"><a href="./pages/photo2.php"><img src="./images/coldRain.png"></a></div>
-                <div class="borderDesign photoTitle"><a href="./pages/photo2.php"><h4>灯のように</h4></a></div>
-            </div>
-            <div>
-                <div class="borderDesign photoWrap"><a href="./pages/photo3.php"><img src="./images/color.png"></a></div>
-                <div class="borderDesign photoTitle"><a href="./pages/photo3.php"><h4>知ってる。きっと私の<span>色</span>じゃないね</h4></a></div>
-            </div>
-            <div>
-                <div class="borderDesign photoWrap"><a href="./pages/photo4.php"><img src="./images/point.png"></a></div>
-                <div class="borderDesign photoTitle"><a href="./pages/photo4.php"><h4>ここに残るもの</h4></a></div>
-            </div>
-            <div>
-                <div class="borderDesign photoWrap"><a href="./pages/photo5.php"><img src="./images/blessing.png"></a></div>
-                <div class="borderDesign photoTitle"><a href="./pages/photo5.php"><h4>祝福</h4></a></div>
-            </div>
-            <div>
-                <div class="borderDesign photoWrap"><a href="./pages/photo6.php"><img src="./images/step.png"></a></div>
-                <div class="borderDesign photoTitle"><a href="./pages/photo6.php"><h4>未定</h4></a></div>
-            </div>
-            <div>
-                <div class="borderDesign photoWrap"><a href="./pages/photo.php"><img src="./images/"></a></div>
-                <div class="borderDesign photoTitle"><a href="./pages/photo.php"><h4></h4></a></div>
-            </div>
+            <?php foreach ($visiblePhotos as $photo): ?>
+                <div>
+                    <div class="borderDesign photoWrap"><a href="<?= htmlspecialchars($photo['url'], ENT_QUOTES, 'UTF-8') ?>"><img src="<?= htmlspecialchars($photo['image'], ENT_QUOTES, 'UTF-8') ?>"></a></div>
+                    <div class="borderDesign photoTitle"><a href="<?= htmlspecialchars($photo['url'], ENT_QUOTES, 'UTF-8') ?>"><h4><?= htmlspecialchars($photo['title'], ENT_QUOTES, 'UTF-8') ?></h4></a></div>
+                </div>
+            <?php endforeach; ?>
         </div>
+
+        <nav aria-label="写真一覧のページ切り替え">
+            <?php if ($page)
+            <?php for ($i = 1; $i <= $totalPages; $i++): ?>
+                <?php if ($i === $page): ?>
+                    <span aria-current="page"><?= $i ?></span>
+                <?php else: ?>
+                    <a href="?page=<?= $i ?>"><?= $i ?></a>
+                <?php endif; ?>
+            <?php endfor; ?>
+            <?php if ($page < $totalPages): ?>
+                <a href="?page=<?= $page + 1 ?>">次へ</a>
+            <?php endif; ?>
+        </nav>
 
         <div class="lighting"></div>
 
