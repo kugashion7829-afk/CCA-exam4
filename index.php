@@ -2,7 +2,7 @@
     <section id="indexSection" class="designWrap">
         <div class="pageTitle">
             <h1><span>私</span>について</h1>
-            <h4>about me</h4>
+            <h3>about me</h3>
         </div>
 
         <div class="nameIndex">
@@ -11,13 +11,13 @@
 
         <hr>
 
-        <div class="imageWrap">
+        <div class="imageWrap borderDesign">
             <div>
                 <img src="./images/about.png" alt="画像が入るよ～">
             </div>
         </div>
         
-        <div class="textWrap">
+        <div class="textWrap borderDesign">
             <div>
                 <p>獅子神リオです。VRChatをメインに活動しています。<br>
                 写真撮影や3Dモデリング等を先駆けとして、Webサイト制作やゲーム制作にも力を注いでいます。<br>
@@ -41,3 +41,5 @@
         </div>
     </div>
 </div>
+
+<?php require __DIR__ . '/footer.php'; ?>
