@@ -27,7 +27,7 @@ $photos = [
     ],
     [
         'image' => './images/step.png',
-        'title' => '未定',
+        'title' => '影を纏う',
         'url' => './pages/photo6.php',
     ],
 ];

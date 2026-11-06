@@ -1,4 +1,6 @@
-<?php require __DIR__ . '/header.php'; ?>
+<?php 
+require __DIR__ . '/app/offsetActivity.php';
+require __DIR__ . '/header.php'; ?>
 
     <section id="activitySection" class="lightMove">
         <div class="designWrap">
@@ -10,10 +12,30 @@
 
             <hr>
 
-            <div class="activeWrap">
-                <div>
-                    
+            <div class="activity">
+
+            <?php foreach ($activities as $activity): ?>
+                <div class="activeWrap borderDesign">
+                    <a href="<?= htmlspecialchars($activity['url'], ENT_QUOTES, 'UTF-8') ?>">
+                        <div class="activeMisc">
+                            <h4><?= htmlspecialchars($activity['title'], ENT_QUOTES, 'UTF-8') ?></h4>
+                            <div>
+                                <?php foreach ($activity['description'] as $paragraph): ?>
+                                    <p><?= htmlspecialchars($paragraph, ENT_QUOTES, 'UTF-8') ?></p>
+                                <?php endforeach; ?>
+                            </div>
+                            <div>
+                                <p>制作時間：<?= htmlspecialchars($activity['duration'], ENT_QUOTES, 'UTF-8' ) ?></p>
+                            </div>
+                        </div>
+
+                        <div class="photoWrap">
+                            <img src="<?= htmlspecialchars($activity['image'], ENT_QUOTES, 'UTF-8') ?>">
+                        </div>
+                    </a>
                 </div>
+            <?php endforeach; ?>
+
             </div>
 
             <div class="lighting"></div>

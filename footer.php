@@ -26,6 +26,7 @@
             </div>
 
         </footer>
+        <script src="/finisher/scripts/script.js"></script>
     </body>
 
 </html>

@@ -10,24 +10,20 @@
 
             <hr>
 
-            <div class="SNSLink">
-                <a href="https://x.com/LioShishigami?s=20">
-                    <div>
-                        <h2>X(旧Twitter)アカウント</h2>
-                        <h4>理生</h4>
-                        <p>主にVRChatで撮影した写真を投稿しています。</p>
-                    </div>
+            <div id="links">
+                <div class="fixedLinks">
+                    <ul>
+                        <li><a class="underBar">Xアカウント 獅子神リオ</a></li>
+                    </ul>
+                </div>
 
-                    <div>
-                        <img src="./images/Xaccount.png">
-                    </div>
-                </a>
-            </div>
-            
-            <div class="SNSLink">
-                <a>
-                    
-                </a>
+                <div class="photoLinks">
+                    <ul></ul>
+                </div>
+
+                <div class="activityLinks">
+                    <ul></ul>
+                </div>
             </div>
 
         </div>

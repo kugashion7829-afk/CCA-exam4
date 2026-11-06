@@ -22,7 +22,7 @@
         </div>
 
         <nav aria-label="写真一覧のページ切り替え">
-            <?php if ($page)
+            <?php if ($page)?>
             <?php for ($i = 1; $i <= $totalPages; $i++): ?>
                 <?php if ($i === $page): ?>
                     <span aria-current="page"><?= $i ?></span>

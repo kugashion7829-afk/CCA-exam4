@@ -43,14 +43,42 @@
                     </div>
 
                     <hr>
+                </div>
+
+                <div class="gridDesign miscDesign">
 
                     <div>
                         <h3>撮影環境</h3>
+                        <ul class="misc">
+                            <li><a href="https://booth.pm/ja/items/4724145">【VRChat用】Integral カメラギミック</a></li>
+                            <li><a href="https://booth.pm/ja/items/5737352">【落ち影システム】ワールドにあなたの影を【Ochikage】</a></li>
+                            <li><a href="https://booth.pm/ja/items/5989814">【VRChatアバターギミック】AvatarPoseSystem</a></li>
+                            <li><a href="https://booth.pm/ja/items/4864776">【MA前提 ライティング調節ツール】 Light Limit Changer For MA v2</a></li>
+                        </ul>
                     </div>
 
                     <div>
-                        <h4>撮影場所</h4>
+                        <h3>撮影場所</h3>
+                        <div class="misc">
+                            <a href="https://vrchat.com/home/launch?worldId=wrld_2d9803f0-924d-407c-b92b-b0654c5afbde">Waves</a>
+                        </div>
                     </div>
+
+                    <div>
+                        <h3>撮影メモ</h3>
+                        <div class="misc">
+                        
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>編集環境</h3>
+                        <ul class="misc">
+                            <li><a href="https://www.clipstudio.net/ja/">ClipStudioPaintEX</a></li>
+                            <li><a>Windows内蔵フォト</a></li>
+                        </ul>
+                    </div>
+                
                 </div>
             </div>
         </div>
