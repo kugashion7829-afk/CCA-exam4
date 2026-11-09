@@ -272,7 +272,7 @@ section > .designWrap > hr {
 /* #region header header.php */
 
 header {
-    background: url(../images/gallery.png) no-repeat center/cover;
+    background: url(../images/gallery.jpg) no-repeat center/cover;
     border-bottom: 10px solid #3d3d3d;
     box-shadow: 0 10px 10px 10px #222222;
     height: 130px;
@@ -347,7 +347,7 @@ header > div > .linkWrap a {
     place-items: center;
     top: 35px;
     right: 40px;
-    @media screen and (min-width : 1180px) {
+    @media screen and (min-width : 1181px) {
         display: none;
     }
 }
@@ -409,7 +409,7 @@ header > div > .linkWrap a {
 
 .hidding {
     transform: translateX(100%);
-    @media screen and (min-width: 1180px) {
+    @media screen and (min-width: 1181px) {
         transform: translateX(0);
     }
 }
@@ -419,7 +419,7 @@ header > div > .linkWrap a {
 /* #region header footer.php */
 
 footer {
-    background: url(../images/gallery.png) no-repeat center/cover;
+    background: url(../images/gallery.jpg) no-repeat center/cover;
 }
 
 footer > :nth-child(1) {
@@ -595,33 +595,90 @@ footer > :nth-child(2) {
     color: #6cb1ff;
 }
 
-#linkSection .SNSLink a {
+#links {
     display: flex;
-    gap: 120px;
-    background-color: #F2F5F5;
-    width: fit-content;
-    margin: 20px auto;
-    color: #232627;
-    border: #222222 5px double;
-    padding: 20px;
+    flex-wrap: wrap;
+    padding-block: 80px;
+    gap: 40px;
 }
 
-#linkSection .SNSLink a > :nth-child(1) {
+#links > *{
+    flex: 1;
+    min-width: 300px;
+    margin-inline: auto;
+}
+
+#links h2 {
+    text-shadow: -8px 10px 3px #222222;
+    margin-bottom: 15px;
+}
+
+#links ul {
     display: flex;
     flex-direction: column;
+    background-color: #232627;
+    gap: 20px;
+    padding-block: 15px;
+    max-height: 1240px;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    @media screen {
+        
+    }
+}
+
+#links ul li {
+    text-align: justify;
+    margin-left: 30px;
+    text-shadow: -8px 10px 3px #222222;
+}
+
+#links ul li a {
+    border-bottom: #F2F5F5 solid 1px;
+}
+
+/* #endregion */
+
+/* #region header skill.php */
+
+#skills {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    row-gap: 90px;
+    column-gap: 30px;
+    padding: 120px 0;
+    color: #F2F5F5;
 }
 
-#linkSection .SNSLink a > :nth-child(1) h4 {
-    margin-bottom: 30px;
+#skills h2 {
+    text-shadow: -8px 10px 3px #222222;
+    margin-bottom: 15px;
 }
 
-#linkSection .SNSLink a > :nth-child(2) {
-    max-width: 400px;
+#skills h4 {
+    margin-bottom: 15px;
+    text-shadow: -8px 10px 3px #222222;
+    border-bottom: #F2F5F5 1px solid;
+    display: inline-block;
 }
 
-#linkSection .SNSLink a > :nth-child(2) img {
+#skills div  {
+    max-width: 370px;
     width: 100%;
+    margin-inline: 0;
+}
+
+#skills div > div{
+    background-color: #232627;
+    padding: 60px 30px;
+    height: 100%;
+    border-block: 1px solid #F2F5F5;
+}
+
+#skills p {
+    text-shadow: -8px 10px 3px #222222;
+    line-height: 1.5rem;
 }
 
 /* #endregion */

@@ -10,6 +10,20 @@
             <h3>photograph</h3>
         </div>
 
+        <nav aria-label="写真一覧のページ切り替え">
+            <?php if ($page)?>
+            <?php for ($i = 1; $i <= $totalPages; $i++): ?>
+                <?php if ($i === $page): ?>
+                    <span aria-current="page"><?= $i ?></span>
+                <?php else: ?>
+                    <a href="?page=<?= $i ?>"><?= $i ?></a>
+                <?php endif; ?>
+            <?php endfor; ?>
+            <?php if ($page < $totalPages): ?>
+                <a href="?page=<?= $page + 1 ?>">次へ</a>
+            <?php endif; ?>
+        </nav>
+        
         <hr>
 
         <div class="photograph">

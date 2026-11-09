@@ -3,9 +3,22 @@
 require_once __DIR__ . '/../app/session.php';
 date_default_timezone_set('Asia/Tokyo');
 
-if (!isset($_SESSION['photo1_viewed_at'])) {
-    $_SESSION['photo1_viewed_at'] = time();
+$now = time();
+$expireSeconds = 3 * 24 * 60 * 60;
+
+if (isset($_SESSION['photo1_last_access'])) {
+    $elapsed = $now - $_SESSION['photo1_last_access'];
+
+    if ($elapsed >= $expireSeconds) {
+        unset($_SESSION['photo1_viewed_at']);
+    }
 }
+
+if (!isset($_SESSION['photo1_viewed_at'])) {
+    $_SESSION['photo1_viewed_at'] = $now;
+}
+
+$_SESSION['photo1_last_access'] = $now;
 
 require __DIR__ . '/../header.php'; ?>
 <section id="photoSection" class="lightMove">
@@ -33,7 +46,7 @@ require __DIR__ . '/../header.php'; ?>
                             下部に書かれた「記録 = 'Y/m/d H:i:s';」は記録という空の箱に日時を代入するというプログラミング言語と私独自の解釈を混ぜた副題です。<br>
                         </p>
 
-                        <p>　元々カメラギミックIntegralを練習するために撮影した一枚でした。右の写真がレタッチ前です。<br>
+                        <p>　元々カメラギミックIntegralを練習するために撮影した一枚でした。右の写真（スマホであれば下の写真）がレタッチ前です。<br>
                             そのため最初は16/9の比率で撮影していて、全体像を見せるには下半分があまりにも暗かったためトリミングをしてチェキ風に加工しました。
                         </p>
 
@@ -46,7 +59,7 @@ require __DIR__ . '/../header.php'; ?>
                     <img src="../images/about.png">
                     
                     <div>
-                        <p>記録 = <?= date('Y/m/d H:i:s', $_SESSION['photo1_viewed_at']) ?></p>
+                        <p>記録 = <span class="phrase"><?= date('Y/m/d H:i:s', $_SESSION['photo1_viewed_at']) ?></span></p>
                     </div>
 
                     <div>

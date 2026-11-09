@@ -4,31 +4,37 @@ $photos = [
         'image' => './images/about.png',
         'title' => '私を見つけた日',
         'url' => './pages/photo1.php',
+        'date' => '2026年11月05日更新'
     ],
     [
         'image' => './images/coldRain.png',
         'title' => '灯のように',
         'url' => './pages/photo2.php',
+        'date' => '2026年11月05日更新'
     ],
     [
         'image' => './images/color.png',
         'title' => '知ってる。きっと私の色じゃないね',
         'url' => './pages/photo3.php',
+        'date' => '2026年11月05日更新'
     ],
     [
         'image' => './images/point.png',
         'title' => 'ここに残るもの',
         'url' => './pages/photo4.php',
+        'date' => '2026年11月05日更新'
     ],
     [
         'image' => './images/blessing.png',
         'title' => '祝福',
         'url' => './pages/photo5.php',
+        'date' => '2026年11月05日更新'
     ],
     [
         'image' => './images/step.png',
         'title' => '影を纏う',
         'url' => './pages/photo6.php',
+        'date' => '2026年11月05日更新'
     ],
 ];
 
