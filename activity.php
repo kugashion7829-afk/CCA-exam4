@@ -2,7 +2,7 @@
 require __DIR__ . '/app/offsetActivity.php';
 require __DIR__ . '/header.php'; ?>
 
-    <section id="activitySection" class="lightMove">
+    <section id="activitySection">
         <div class="designWrap">
 
             <div class="pageTitle">
@@ -15,7 +15,7 @@ require __DIR__ . '/header.php'; ?>
             <div class="activity">
 
             <?php foreach ($activities as $activity): ?>
-                <div class="activeWrap borderDesign">
+                <div class="activeWrap borderDesign zoom">
                     <a href="<?= htmlspecialchars($activity['url'], ENT_QUOTES, 'UTF-8') ?>">
                         <div class="activeMisc">
                             <h4><?= htmlspecialchars($activity['title'], ENT_QUOTES, 'UTF-8') ?></h4>
@@ -38,21 +38,8 @@ require __DIR__ . '/header.php'; ?>
 
             </div>
 
-            <div class="lighting"></div>
-
         </div>
 
-    <div class="spotLight">
-        <div></div>
-        <div class="spotLightWrap">
-            <div>
-                <img src="./images/spotLight.png">
-            </div>
-            <div>
-                <img src="./images/spotLight.png">
-            </div>
-        </div>
-    </div>
     </section>
 
 <?php require __DIR__ . '/footer.php'; ?>

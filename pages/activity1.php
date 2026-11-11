@@ -1,5 +1,5 @@
 <?php require __DIR__ . '/../header.php'; ?>
-<section id="activitiesSection" class="lightMove">
+<section id="activitiesSection">
     <div id="portfolio" class="designWrap">
 
         <div class="activeTitle borderDesign">
@@ -34,19 +34,19 @@
 
                     <div class="transitionImages">
                         <div class="imageWrap">
-                            <img class="image" src="../images/portfolio2.jpg">
+                            <img class="image modalTrigger" src="../images/portfolio2.jpg">
                         </div>
 
                         <p class="flex">&rarr;</p>
 
                         <div class="imageWrap">
-                            <img class="image" src="../images/portfolio2-2.jpg">
+                            <img class="image modalTrigger" src="../images/portfolio2-2.jpg">
                         </div>
 
                         <p class="flex">&rarr;</p>
 
                         <div class="imageWrap">
-                            <img class="image" src="../images/portfolio3.jpg">
+                            <img class="image modalTrigger" src="../images/portfolio3.jpg">
                         </div>
                     </div>
                     
@@ -117,7 +117,7 @@ function pageVisible (pageNumber) {
                     </div>
 
                     <div class="aboutImage imageWrap">
-                        <img class="image" src="../images/portfolio1.jpg">
+                        <img class="image modalTrigger" src="../images/portfolio1.jpg">
                     </div>
 
                     <div class="aboutDescription">
@@ -132,13 +132,13 @@ function pageVisible (pageNumber) {
 
                     <div class="galleryImages">
                         <div class="imageWrap">
-                            <img class="image" src="../images/portfolio2.jpg">
+                            <img class="image modalTrigger" src="../images/portfolio2.jpg">
                         </div>
 
                         <p>&rarr;</p>
 
                         <div class="imageWrap">
-                            <img class="image" src="../images/portfolio2-3.jpg">
+                            <img class="image modalTrigger" src="../images/portfolio2-3.jpg">
                         </div>
                     </div>
 
@@ -157,11 +157,11 @@ function pageVisible (pageNumber) {
 
                     <div class="skillImages">
                         <div class="imageWrap">
-                            <img class="image" src="../images/portfolio3.jpg">
+                            <img class="image modalTrigger" src="../images/portfolio3.jpg">
                         </div>
 
                         <div class="imageWrap">
-                            <img class="image" src="../images/portfolio3-2.jpg">
+                            <img class="image modalTrigger" src="../images/portfolio3-2.jpg">
                         </div>
                     </div>
 

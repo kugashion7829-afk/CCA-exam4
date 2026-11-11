@@ -253,4 +253,81 @@
 
 /* #region header activity2.php */
 
+.active2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto ;
+    gap: 40px;
+}
+
+.active2 > .designAttach > h4 {
+    margin-bottom: 16px;
+} 
+
+.active2 > .designAttach > div {
+    margin: 0 0 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    line-height: 1.2rem;
+}
+
+.active2 .projectFacts {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+.active2 .projectIntro {
+    grid-column: 2 / 5;
+    grid-row: 1;
+}
+
+.active2 .projectIntro > p {
+    line-height: 1.2rem;
+}
+
+.active2 .structureHeading {
+    grid-column: 1 / 5;
+    grid-row: 2;
+    flex-direction: column;
+    border: 1px solid #222222;
+}
+
+.active2 .figmaImage {
+    grid-column: 1 / 3;
+    grid-row: 3;
+    overflow: hidden;
+}
+
+.active2 .figmaDescription {
+    grid-column: 3 / 5;
+    grid-row: 3;
+}
+
+.active2 .responsiveDescription {
+    grid-column: 1 / 5;
+    grid-row: 4;
+}
+
+.designHeding {
+    grid-column: 1 / 5;
+    grid-row: 5;
+    flex-direction: column;
+    border: #222222 1px solid;
+}
+
+.active2 .designDescription {
+    grid-column: 1 / 3;
+    grid-row: 6;
+}
+
+.active2 .designDescription >
+
+.active2 .pageLimit {
+    grid-column: 3 / 5;
+    grid-row: 7;
+}
+
+
+
 /* #endregion */

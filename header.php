@@ -9,10 +9,11 @@
         <link rel="stylesheet" href="<?= $basePath ?>/styles/style.css">
         <link rel="stylesheet" href="<?= $basePath ?>/styles/pageStyle.css">
         <link rel="stylesheet" href="<?= $basePath ?>/styles/activityStyle.css">
+        <link rel="icon" type="image/png" href="<?= $basePath ?>/images/ukatou.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Zen+Kurenaido&display=swap" rel="stylesheet">
-        <title></title>
+        <title>雨花灯</title>
     </head>
 
     <body>
@@ -24,11 +25,11 @@
                 </div>
             
                 <ul class="linkWrap hidding">
-                    <li><a href="<?= $basePath ?>/index.php">About Me</a></li>
-                    <li><a href="<?= $basePath ?>/photograph.php">Photograph</a></li>
-                    <li><a href="<?= $basePath ?>/activity.php">Activity</a></li>
-                    <li><a href="<?= $basePath ?>/skill.php">Skill</a></li>
-                    <li><a href="<?= $basePath ?>/link.php">Link</a></li>
+                    <li><a class="zoom" href="<?= $basePath ?>/index.php">About Me</a></li>
+                    <li><a class="zoom" href="<?= $basePath ?>/photograph.php">Photograph</a></li>
+                    <li><a class="zoom" href="<?= $basePath ?>/activity.php">Activity</a></li>
+                    <li><a class="zoom" href="<?= $basePath ?>/skill.php">Skill</a></li>
+                    <li><a class="zoom" href="<?= $basePath ?>/link.php">Link</a></li>
                 </ul>
 
                 <div class="headerMenu">

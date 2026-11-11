@@ -15,6 +15,7 @@ $photos = [
     [
         'image' => './images/color.png',
         'title' => '知ってる。きっと私の色じゃないね',
+        'css' => 'small',
         'url' => './pages/photo3.php',
         'date' => '2026年11月05日更新'
     ],

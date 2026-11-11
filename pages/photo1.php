@@ -33,7 +33,7 @@ require __DIR__ . '/../header.php'; ?>
 
         <div class="photoWrap borderDesign">
             <div>
-                <img src="../images/foundMe.png">
+                <img class="modalExTrigger buttonFrame" src="../images/foundMe.png">
             </div>
             <h2>記録 = <?= date('Y/m/d H:i:s', $_SESSION['photo1_viewed_at']) ?></h2>
         </div>
@@ -56,7 +56,7 @@ require __DIR__ . '/../header.php'; ?>
                         </p>
                     </div>
 
-                    <img src="../images/about.png">
+                    <img class="modalTrigger buttonFrame" src="../images/foundMeBefore.jpg">
                     
                     <div>
                         <p>記録 = <span class="phrase"><?= date('Y/m/d H:i:s', $_SESSION['photo1_viewed_at']) ?></span></p>
@@ -81,17 +81,17 @@ require __DIR__ . '/../header.php'; ?>
                     <div>
                         <h3>撮影環境</h3>
                         <ul class="misc">
-                            <li><a href="https://booth.pm/ja/items/4724145">【VRChat用】Integral カメラギミック</a></li>
-                            <li><a href="https://booth.pm/ja/items/5737352">【落ち影システム】ワールドにあなたの影を【Ochikage】</a></li>
-                            <li><a href="https://booth.pm/ja/items/5989814">【VRChatアバターギミック】AvatarPoseSystem</a></li>
-                            <li><a href="https://booth.pm/ja/items/4864776">【MA前提 ライティング調節ツール】 Light Limit Changer For MA v2</a></li>
+                            <li><a class="underBar zoom" href="https://booth.pm/ja/items/4724145">【VRChat用】Integral カメラギミック</a></li>
+                            <li><a class="underBar zoom" href="https://booth.pm/ja/items/5737352">【落ち影システム】ワールドにあなたの影を【Ochikage】</a></li>
+                            <li><a class="underBar zoom" href="https://booth.pm/ja/items/5989814">【VRChatアバターギミック】AvatarPoseSystem</a></li>
+                            <li><a class="underBar zoom" href="https://booth.pm/ja/items/4864776">【MA前提 ライティング調節ツール】 Light Limit Changer For MA v2</a></li>
                         </ul>
                     </div>
 
                     <div>
                         <h3>撮影場所</h3>
                         <div class="misc">
-                            <a href="https://vrchat.com/home/launch?worldId=wrld_269fa2ee-33e6-4505-b44f-fd1b3e4b6262">小雨のあの日-A drizzly day</a>
+                            <a class="underBar zoom" href="https://vrchat.com/home/launch?worldId=wrld_269fa2ee-33e6-4505-b44f-fd1b3e4b6262">小雨のあの日-A drizzly day</a>
                         </div>
                     </div>
 
@@ -107,7 +107,7 @@ require __DIR__ . '/../header.php'; ?>
                     <div>
                         <h3>編集環境</h3>
                         <ul class="misc">
-                            <li><a href="https://www.clipstudio.net/ja/">ClipStudioPaintEX</a></li>
+                            <li><a class="underBar zoom" href="https://www.clipstudio.net/ja/">ClipStudioPaintEX</a></li>
                             <li><a>Windows内蔵フォト</a></li>
                         </ul>
                     </div>
@@ -131,5 +131,6 @@ require __DIR__ . '/../header.php'; ?>
             </div>
         </div>
     </div>
+
 </section>
 <?php require __DIR__ . '/../footer.php'; ?>

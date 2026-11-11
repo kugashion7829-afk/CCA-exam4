@@ -3,18 +3,18 @@
         <footer>
             <div class="designWrap">
                 <ul class="footerMenu">
-                    <li><a href="<?= $basePath ?>/index.php">About Me</a></li>
-                    <li><a href="<?= $basePath ?>/photograph.php">Photograph</a></li>
-                    <li><a href="<?= $basePath ?>/activity.php">Activity</a></li>
-                    <li><a href="<?= $basePath ?>/skill.php">Skill</a></li>
-                    <li><a href="<?= $basePath ?>/link.php">Link</a></li>
+                    <li><a class="zoom" href="<?= $basePath ?>/index.php">About Me</a></li>
+                    <li><a class="zoom" href="<?= $basePath ?>/photograph.php">Photograph</a></li>
+                    <li><a class="zoom" href="<?= $basePath ?>/activity.php">Activity</a></li>
+                    <li><a class="zoom" href="<?= $basePath ?>/skill.php">Skill</a></li>
+                    <li><a class="zoom" href="<?= $basePath ?>/link.php">Link</a></li>
                 </ul>
 
                 <div class="footerLogo"><img src="<?= $basePath ?>/images/ukatou.png"></div>
 
                 <div class="SNS">
-                    <a><img src="<?= $basePath ?>/images/X.svg"></a>
-                    <a><img src="<?= $basePath ?>/images/GitHubLogo.svg"></a>
+                    <a class="zoom" href="https://x.com/LioShishigami"><img src="<?= $basePath ?>/images/X.svg"></a>
+                    <a class="zoom" href="https://github.com/kugashion7829-afk"><img src="<?= $basePath ?>/images/GitHubLogo.svg"></a>
                 </div>
             
             </div>
@@ -27,6 +27,7 @@
             </div>
 
         </footer>
+        <?php require __DIR__ . '/app/imageModal.php'; ?>
         <script src="<?= $basePath ?>/scripts/script.js"></script>
     </body>
 

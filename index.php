@@ -13,7 +13,7 @@
 
         <div class="imageWrap borderDesign">
             <div>
-                <img src="./images/about.png" alt="画像が入るよ～">
+                <img class="buttonFrame" src="./images/cradle.png" alt="画像が入るよ～">
             </div>
         </div>
         

@@ -105,6 +105,95 @@ h4 {
     align-items: center;
 }
 
+.zoom {
+    display: inline-block;
+    transition: transform .3s ease-in-out;
+}
+
+.zoom:hover {
+    transform: scale(1.2);  
+    transition: transform .3s ease-in-out;
+}
+
+.cornerFrame {
+    --corner-size: 24px;  /* 角の線の長さ */
+    --corner-line: 2px;   /* 線の太さ */
+    --corner-color: #222222;
+
+    background-color: #2326271f;
+    
+    padding: 24px;
+
+    background-image:
+        linear-gradient(var(--corner-color), var(--corner-color)),
+        linear-gradient(var(--corner-color), var(--corner-color)),
+        linear-gradient(var(--corner-color), var(--corner-color)),
+        linear-gradient(var(--corner-color), var(--corner-color)),
+        linear-gradient(var(--corner-color), var(--corner-color)),
+        linear-gradient(var(--corner-color), var(--corner-color)),
+        linear-gradient(var(--corner-color), var(--corner-color)),
+        linear-gradient(var(--corner-color), var(--corner-color));
+
+    background-position:
+        left top, left top,
+        right top, right top,
+        left bottom, left bottom,
+        right bottom, right bottom;
+
+    background-size:
+        var(--corner-size) var(--corner-line),
+        var(--corner-line) var(--corner-size),
+        var(--corner-size) var(--corner-line),
+        var(--corner-line) var(--corner-size),
+        var(--corner-size) var(--corner-line),
+        var(--corner-line) var(--corner-size),
+        var(--corner-size) var(--corner-line),
+        var(--corner-line) var(--corner-size);
+
+    background-repeat: no-repeat;
+    
+}
+
+.buttonFrame {
+    background-color: #2326271f;
+
+    padding: 24px;
+
+    background-image:
+        radial-gradient(circle at 12px 12px ,#222 0 3px ,transparent 3px),
+        radial-gradient(circle at calc(100% - 12px) 12px ,#222 0 3px ,transparent 3px),
+        radial-gradient(circle at 12px calc(100% - 12px) ,#222 0 3px ,transparent 3px),
+        radial-gradient(circle at calc(100% - 12px) calc(100% - 12px) ,#222 0 3px ,transparent 3px);
+
+    background-position:
+        left top, right top,
+        left bottom, right bottom;
+
+    background-size:
+        100% 100%,
+        100% 100%,
+        100% 100%,
+        100% 100%;
+
+    background-repeat: no-repeat;
+    
+}
+
+.canvasTexture {
+    background-color: #f0eadc;
+    background-image:
+        repeating-linear-gradient(
+            0deg,
+            rgba(90, 70, 40, 0.05) 0 1px,
+            transparent 1px 10px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            rgba(90, 70, 40, 0.05) 0 1px,
+            transparent 1px 10px
+        );
+}
+
 /* #endregion */
 
 /* #region header 共通 */
@@ -148,19 +237,19 @@ section > .designWrap > hr {
 }
 
 .lighting {
-    height: 2000px;
-    width: 100%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: radial-gradient(
-        ellipse 1000px 1500px at 50% 1000px,
-        rgba(199, 152, 70, 0.082) 50%,
-        rgba(51, 51, 51, 0.555) 55%,
-        transparent 100%
-    );
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    transform: none;
+    z-index: 1;
     pointer-events: none;
+    background: radial-gradient(
+        ellipse var(--light-width, 85%) var(--light-height, 80%)
+        at var(--light-x, 50%) var(--light-y, 50%),
+        rgba(199, 152, 70, 0.082) 50%,
+        var(--exhibit-shade, rgba(22, 22, 22, 0.555)) 55%
+    );
 }
 
 .spotLight {
@@ -170,7 +259,7 @@ section > .designWrap > hr {
     width: 100%;
     filter: blur(1px) opacity(0.5);
     @media screen and (max-width: 768px) {
-        display: none;
+        top: 15%;
     }
 }
 
@@ -185,11 +274,17 @@ section > .designWrap > hr {
     justify-content: space-between;
     padding-inline: 40px;
     width: 100%;
+    @media screen and (max-width: 768px) {
+        padding-inline: 20px;
+    }
 }
 
 .spotLightWrap > div {
     width: 200px;
     transform: translateY(-3%);
+    @media screen and (max-width: 768px) {
+        width: clamp(100px, 4.58px + 25.4453vw, 200px);
+    }
 }
 
 .spotLightWrap img {
@@ -207,12 +302,74 @@ section > .designWrap > hr {
 
 .lightMove .lighting {
     position: fixed;
+    inset: auto;
     top: 100%;
+    left: 50%;
+    width: 100%;
+    height: 2000px;
+    transform: translate(-50%, -50%);
 }
 
+.imageModal {
+    margin: auto;
+    padding: 16px;
+    max-width: 90vw;
+    max-height: 90vh;
+    background-color: #222;
+    color: #fff;
+}
+
+.modalImage {
+    display: block;
+    max-width: 100%;
+    max-height: 75vh;
+    width: auto;
+    height: auto;
+    margin: 12px auto 0;
+}
+
+.imageModal::backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modalTrigger {
+    cursor: zoom-in;
+}
+
+.modalVisual {
+    position: relative;
+    width: fit-content;
+    max-width: 100%;
+    margin: 12px auto 0;
+}
+
+.modalCaption {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    font-size: 1.5rem;
+    transform: translateX(-50%);
+    margin: 0;
+    color: #232627;
+    white-space: nowrap;
+}
 /* #endregion */
 
 /* #region header index.php */
+#indexSection {
+    isolation: isolate;
+    overflow: hidden;
+    --light-x: 50%;
+    --light-y: 50%;
+    --light-width: 55%;
+    --light-height: 76%;
+}
+@media screen and (max-width: 768px) {
+    #indexSection {
+        --light-width: 110%;
+    }
+}
+
 #indexSection > .pageTitle span {
     color: #db5d36;
 }
@@ -483,24 +640,88 @@ footer > :nth-child(2) {
 
 /* #region header photograph.php */
 
-#photographSection > div > .pageTitle span {
+#photographSection {
+    padding-block: 0;
+}
+
+#photographSection .pageTitle span {
     color: #ca9dc8;
 }
 
-#photographSection .photograph {    
-    padding-block: 40px;
+#photographSection .photograph {
     display: flex;
     flex-direction: column;
-    gap: 524px;
 }
 
-#photographSection .photograph > div {
+#photographSection .exhibit {
+    position: relative;
+    isolation: isolate;
+    --light-x: 50%;
+    --light-y: 50%;
+    --light-width: 55%;
+    --light-height: 76%;
+    --exhibit-shade: rgba(22, 22, 22, 0.555);
+}
+
+#photographSection .exhibit:not(.isLit) .lighting {
+    background: rgba(22, 22, 22, 0.555);
+}
+
+#photographSection .exhibit.small {
+    --light-height: 66%;
+}
+
+@media screen and (max-width: 768px) {
+    #photographSection .exhibit {
+        --light-width: 110%;
+    }
+}
+
+#photographSection .fixtureTrack {
+    position: absolute;
+    inset: 0;
+    height: 500px;
+    z-index: 2;
+    pointer-events: none;
+    @media screen and (max-width: 768px) {
+        height: 0;
+    }
+}
+
+#photographSection .fixtureTrack > .spotLight {
+    position: sticky;
+    top: 0;
+}
+
+#photographSection .exhibitSurface {
+    position: relative;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 60px;
+    padding: clamp(160px, 22vw, 280px) clamp(24px, 5vw, 80px);
+}
+
+#photographSection .exhibitSurface > .lighting {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    transform: none;
+    z-index: 1;
+    pointer-events: none;
+    background: radial-gradient(
+        ellipse var(--light-width) var(--light-height)
+        at var(--light-x) var(--light-y),
+        rgba(199, 152, 70, 0.082) 50%,
+        var(--exhibit-shade) 55%
+    );
+    transition: background .5s ease-in-out;
 }
 
 #photographSection .photoWrap {
+    width: 100%;
     max-width: 768px;
 }
 
@@ -512,24 +733,59 @@ footer > :nth-child(2) {
     width: 100%;
 }
 
+#photographSection .photoTitle {
+    max-width: 100%;
+}
+
 #photographSection .photoTitle a {
     display: block;
+    overflow-wrap: anywhere;
 }
 
 #photographSection .photoTitle h4 {
     color: #232627;
 }
 
-#photographSection .photograph > :nth-child(3) span {
-    color: #fc6e1c;
-} 
-
 #photographSection nav {
-    margin-block: 40px;
     text-align: center;
     font-size: 1.5rem;
 }
 
+#photographSection .shadows {
+    position: relative;
+    isolation: isolate;
+    padding-block: 160px;
+}
+
+#photographSection .shadows > nav > a:hover {
+    position: relative;
+    z-index: 2;
+}
+
+#photographSection .shadows::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background-color: rgba(22, 22, 22, 0.555);
+    pointer-events: none;
+}
+
+
+#photographSection .titleLighting::after {
+    background: radial-gradient(
+        ellipse 200px 100px at 190px 45%,
+        rgba(199,152,70,0.082) 50%,
+        rgba(22,22,22,0.555) 70%
+    );
+    @media screen and (max-width: 768px) {
+        background: radial-gradient(
+            ellipse 200px 100px at 50% 40%,
+            rgba(199,152,70,0.082) 50%,
+            rgba(22,22,22,0.555) 70%
+        );
+    }
+}
 /* #endregion */
 
 /* #region header activity.php */
@@ -573,7 +829,7 @@ footer > :nth-child(2) {
     }
 }
 
-#activitySection .activeWrap a > :nth-child(1) > * {
+#activitySection .activeMisc > * {
     border: #232627 1px solid;
     padding: 8px;
     width: fit-content;
@@ -629,7 +885,7 @@ footer > :nth-child(2) {
 
 #links ul li {
     text-align: justify;
-    margin-left: 30px;
+    margin-left: 40px;
     text-shadow: -8px 10px 3px #222222;
 }
 
