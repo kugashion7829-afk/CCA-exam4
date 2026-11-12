@@ -30,7 +30,7 @@ require __DIR__ . '/header.php'; ?>
                         </div>
 
                         <div class="photoWrap">
-                            <img src="<?= htmlspecialchars($activity['image'], ENT_QUOTES, 'UTF-8') ?>">
+                            <img loading="lazy" src="<?= htmlspecialchars($activity['image'], ENT_QUOTES, 'UTF-8') ?>">
                         </div>
                     </a>
                 </div>

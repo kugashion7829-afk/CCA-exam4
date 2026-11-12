@@ -21,7 +21,7 @@ $activities = [
         'duration' => '約60時間',
         'image' => './images/ccaExam1.jpg',
         'url' => './pages/activity2.php',
-        'date' => '2026年11月05日更新'
+        'date' => '2026年11月12日更新'
     ],
 
     [
@@ -33,7 +33,7 @@ $activities = [
         'duration' => '約80時間',
         'image' => './images/ccaExam2.jpg',
         'url' => './pages/activity3.php',
-        'date' => '2026年11月05日更新'
+        'date' => '未定'
     ],
 
     [
@@ -45,6 +45,6 @@ $activities = [
         'duration' => '約60時間',
         'image' => './images/ccaExam3.png',
         'url' => './pages/activity4.php',
-        'date' => '2026年11月05日更新'
+        'date' => '未定'
     ],
 ];

@@ -2,7 +2,9 @@
 <section id="activitiesSection">
     <div id="portfolio" class="designWrap">
 
+        <!-- 額縁 -->
         <div class="activeTitle borderDesign">
+            <!-- フレーム -->
             <div>
                 <!-- この中にタイトルを追加 -->
 
@@ -11,8 +13,12 @@
             </div>
         </div>
 
+        <!-- 額縁 -->
         <div class="activeInfo borderDesign">
+            <!-- フレーム -->
             <div class="canvasTexture">
+                
+                <!-- 下地 -->
                 <div class="active2">
                     <!-- この中に要素を追加 -->
 
@@ -28,20 +34,13 @@
                         <p>初めてのWebサイト制作でした。HTMLとCSSの基礎学習は済ませていましたが、それでも初めてだったので右往左往しながら色々試行錯誤して制作に取り組んだ記憶があります。</p>
                     </div>
 
-                    <div class="pageLimit designAttach">
-                        <h4>公開期間について</h4>
-                        <div>
-                            <p>本ページは、職業訓練を通して制作し、就職活動のポートフォリオとして公開しています。2027年2月17日をもって公開を終了する予定です。</p>
-                        </div>
-                    </div>
-
                     <div class="structureHeading flex">
                         <h3>制作工程１</h3>
                         <h4>ページ制作の大本</h4>
                     </div>
 
                     <div class="figmaImage flex">
-                        <img class="image cornerFrame modalTrigger" src="../images/DHR1.jpg">
+                        <img class="image cornerFrame modalTrigger" loading="lazy" src="../images/DHR1.jpg" alt="figmaというデザインカンプサイトのイメージ画像が添付されている デザインの指示書">
                     </div>
 
                     <div class="figmaDescription designAttach">
@@ -91,7 +90,7 @@
                         </div>
                     </div>
 
-                    <div class="designHeding flex">
+                    <div class="designHeading flex">
                         <h3>制作工程２</h3>
                         <h4>自分なりのデザインを目指して</h4>
                     </div>
@@ -100,12 +99,97 @@
                         <h4>どんなデザインにしたいのか</h4>
                         <div>
                             <p>
-                                デザインカンプ上のレイアウトが完成した後、デザインを変更する機会をいただきました。
+                                デザインカンプ上のレイアウトが完成した後、デザインを変更する機会をいただきました。僕が好きなデザインをそのときの私なりに作成してみることにしました。
+                            </p>
+                            <p>
+                                僕が好きなのは、雨と紫陽花。
+                            </p>
+                            <p>
+                                いつも真っ先に思い浮かぶそれらをデザインに取り込むことにしました。最初に思い浮かんだのはSVG画像を背景でリアルタイムで変形させて雨と風、紫陽花を表現するものでした。<br>
+                                ですがそれを実現するための技術も時間もそのときはありませんでした。あきらかに工数が足りませんでしたからね。
                             </p>
                         </div>
                     </div>
 
+                    <div class="designLogo flex">
+                        <h2><span>雨</span>と<span>紫陽花</span></h2>
+                    </div>
+
+                    <div class="designAnswer flex">
+                        <div>
+                            <p>
+                                結果として最終的に落ち着いたデザインは色を雨や紫陽花に寄せるのとradial-gradientを用いた水玉や背景を紫陽花の画像に差し替える。そういった静的なデザインに落ち着きました。
+                            </p>
+                            <p>
+                                望んだデザインを実現することができなかったのは悔しいですが、どういったことを用いてそれが実装されているのかを知ることができたので決して無駄ではありませんでした。
+                            </p>
+                            <p>
+                                それにこのデザインでも気に入っている部分はあります。各Sectionに鍵括弧のような枠を取り付けたのですが、疑似要素と背景色を使って結構無理やり取り付けた覚えがあって楽しかった印象があります。
+                            </p>
+                            <p>
+                                あとこれは完全に自己満足なのですが、このWebサイトのロゴは僕が一文字ずつ、positionで絶対値で配置しました。今考えてもなかなか面倒くさいことをしているなと思います…
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="designBefore">
+                        <h4>元のデザイン</h4>
+                        <div>
+                            <img class="cornerFrame image modalTrigger" loading="lazy" src="../images/DHR2.jpg" alt="デザイン前の画像、赤と白を基調にデザインされている">
+                        </div>
+                    </div>
+
+                    <div class="designImage">
+                        <div>
+                            <h4>水玉</h4>
+                            <div>
+                                <img class="cornerFrame image modalTrigger" loading="lazy" src="../images/DHR3.jpg" alt="Webページのメニューが雨粒イメージの水玉で彩られている">
+                            </div>
+                        </div> 
+                        <div>
+                            <h4>色彩</h4>
+                            <div>
+                                <img class="cornerFrame image modalTrigger" loading="lazy" src="../images/DHR4.jpg" alt="Webページの色調が青や緑で構成されている">
+                            </div>
+                        </div>
+                        <div>
+                            <h4>紫陽花</h4>
+                            <div>
+                                <img class="cornerFrame image modalTrigger" loading="lazy" src="../images/DHR5.jpg" alt="formタグの背景画像に紫陽花が挿入されている">
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="designMisc designAttach">
+                        <h4>画像について</h4>
+                        <div>
+                            <p>
+                                紫陽花の画像はChatGPT-5.6 Solを使用して作成されています。 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="afterHeading flex">
+                        <h3>総評</h3>
+                    </div>
+
+                    <div class="afterWord">
+                        <p>
+                            初めてのWebサイト制作といこともあり、大変なことが多々ありましたが、それでも自身の成長に繋がるいい演習でした。レスポンシブについてもここがあったからより深く考える事が出来るようになったと思っています。<br>
+                            また、演習ということで他人と見せ合い、個人個人の工夫や違いを間近で理解しながら制作を進めていく経験はとても貴重で楽しかったです。<br>
+                            後、制作が終わってから自分より前の期で制作されたものを拝見させていただいたのですが、自分とは違い動的なデザインを多く取り入れていていい刺激と感銘を受けました。
+                        </p>
+                    </div>
+
+                    <div class="pageLimit designAttach">
+                        <h4>画像の公開期間について</h4>
+                        <div>
+                            <p>実際のWebページに掲載されている画像は、職業訓練でWebページを制作するためにお借りしている素材であり、就職活動のために卒業後３カ月まで利用を許可されています。画像の掲載は2027年2月17日をもって公開を終了する予定です。URLも同様です。</p>
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
         </div>
 

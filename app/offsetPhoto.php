@@ -17,25 +17,25 @@ $photos = [
         'title' => '知ってる。きっと私の色じゃないね',
         'css' => 'small',
         'url' => './pages/photo3.php',
-        'date' => '2026年11月05日更新'
+        'date' => '未定'
     ],
     [
         'image' => './images/point.png',
         'title' => 'ここに残るもの',
         'url' => './pages/photo4.php',
-        'date' => '2026年11月05日更新'
+        'date' => '未定'
     ],
     [
         'image' => './images/blessing.png',
         'title' => '祝福',
         'url' => './pages/photo5.php',
-        'date' => '2026年11月05日更新'
+        'date' => '未定'
     ],
     [
         'image' => './images/step.png',
         'title' => '影を纏う',
         'url' => './pages/photo6.php',
-        'date' => '2026年11月05日更新'
+        'date' => '未定'
     ],
 ];
 

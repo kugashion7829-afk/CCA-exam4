@@ -15,6 +15,19 @@
 .activeInfo {
     color: #222222;
 }
+
+.designAttach > h4 {
+    margin-bottom: 16px;
+} 
+
+.designAttach > div {
+    margin: 0 0 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    line-height: 1.2rem;
+}
+
 /* #endregion */
 
 /* #region header activity1.php */
@@ -39,13 +52,17 @@
     object-fit: cover;
 }
 
+.activeInfo > :nth-child(1) {
+    padding: clamp(24px, -9.80px + 9.0141vw, 120px);
+}
+
 #portfolio .active1 > .projectFacts {
     grid-column: 1 / 2;
     grid-row: 1;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 960px) {
         grid-column: 1 / 4;
         grid-row: 1;
     }
@@ -54,7 +71,7 @@
 #portfolio .active1 > .projectIntro {
     grid-column: 2 / 4;
     grid-row: 1;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 960px) {
         grid-column: 1 / 4;
         grid-row: 2;
     }
@@ -66,7 +83,7 @@
     flex-direction: column;
     border: #232627 1px solid;
     padding-block: 12px;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 960px) {
         grid-column: 1 / 4;
         grid-row: 3;
     }
@@ -77,7 +94,7 @@
     justify-content: center;
     grid-column: 1 / 4;
     grid-row: 3;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 960px) {
         flex-direction: column;
         grid-column: 1 / 4;
         grid-row: 4;
@@ -90,7 +107,7 @@
 }
 
 .active1 > .transitionImages > p {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 960px) {
         transform: rotateZ(90deg);
     }
 }
@@ -98,7 +115,7 @@
 .active1 > .structureDescription {
     grid-column: 1 / 3;
     grid-row: 4;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 960px) {
         grid-column: 1 / 4;
         grid-row: 7;
     }
@@ -110,7 +127,7 @@
     overflow: scroll;
     border: #232627 1px solid;
     max-height: 300px;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 960px) {
         grid-column: 1 / 4;
         grid-row: 10;
     }
@@ -126,7 +143,7 @@
     flex-direction: column;
     border: #232627 1px solid;
     padding-block: 12px;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 960px) {
         grid-column: 1 / 4;
         grid-row: 11;
     }
@@ -135,7 +152,7 @@
 .active1 > .aboutImage {
     grid-column: 1 / 3;
     grid-row: 6;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 960px) {
         grid-column: 1 / 4;
         grid-row: 12;
     }
@@ -144,7 +161,7 @@
 .active1 > .aboutDescription {
     grid-column: 3 / 4;
     grid-row: 6;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 960px) {
         grid-column: 1 / 4;
         grid-row: 13;
     }
@@ -158,7 +175,7 @@
     @media screen and (max-width: 1200px) {
         flex-direction: column;
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 960px) {
         grid-column: 1 / 4;
         grid-row: 14;
     }
@@ -178,7 +195,7 @@
 .active1 > .galleryDescription {
     grid-column: 3 / 4;
     grid-row: 7;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 960px) {
         grid-column: 1 / 4;
         grid-row: 15;
     }
@@ -193,7 +210,7 @@
     @media screen and (max-width: 1200px) {
         flex-direction: column;
     };
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 960px) {
         grid-column: 1 / 4;
         grid-row: 16;
     };
@@ -202,7 +219,7 @@
 .active1 > .skillDescription {
     grid-column: 3 / 4;
     grid-row: 8;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 960px) {
         grid-column: 1 / 4;
         grid-row: 17;
     };
@@ -211,7 +228,7 @@
 .active1 > .linkImages {
     grid-column: 1 / 3;
     grid-row: 9;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 960px) {
         grid-column: 1 / 4;
         grid-row: 18;
     };
@@ -220,7 +237,7 @@
 .active1 > .linkDescription {
     grid-column: 3 / 4;
     grid-row: 9;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 960px) {
         grid-column: 1 / 4;
         grid-row: 19;
     };
@@ -231,7 +248,7 @@
     grid-row: 10;
     border: #232627 1px solid;
     padding-block: 12px;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 960px) {
         grid-column: 1 / 4;
         grid-row: 20;
     };
@@ -242,7 +259,7 @@
     grid-row: 11;
     padding-inline: 120px;
     line-height: 1.5rem;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 960px) {
         grid-column: 1 / 4;
         grid-row: 21;
         padding-inline: 10px;
@@ -260,26 +277,23 @@
     gap: 40px;
 }
 
-.active2 > .designAttach > h4 {
-    margin-bottom: 16px;
-} 
-
-.active2 > .designAttach > div {
-    margin: 0 0 10px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    line-height: 1.2rem;
-}
-
 .active2 .projectFacts {
     grid-column: 1 / 2;
     grid-row: 1;
+    @media screen and (max-width: 960px) {
+        grid-column: 1 / 5;
+        grid-row: auto;
+    }
 }
 
 .active2 .projectIntro {
     grid-column: 2 / 5;
     grid-row: 1;
+    font-size: 1.3rem;
+    @media screen and (max-width: 960px) {
+        grid-column: 1 / 5;
+        grid-row: auto;
+    }
 }
 
 .active2 .projectIntro > p {
@@ -291,43 +305,300 @@
     grid-row: 2;
     flex-direction: column;
     border: 1px solid #222222;
+    @media screen and (max-width: 960px) {
+        grid-column: 1 / 5;
+        grid-row: auto;
+    }
 }
 
 .active2 .figmaImage {
     grid-column: 1 / 3;
     grid-row: 3;
     overflow: hidden;
+    @media screen and (max-width: 960px) {
+        grid-column: 1 / 5;
+        grid-row: auto;
+    }
 }
 
 .active2 .figmaDescription {
     grid-column: 3 / 5;
     grid-row: 3;
+    @media screen and (max-width: 960px) {
+        grid-column: 1 / 5;
+        grid-row: auto;
+    }
 }
 
 .active2 .responsiveDescription {
     grid-column: 1 / 5;
     grid-row: 4;
+    @media screen and (max-width: 960px) {
+        grid-column: 1 / 5;
+        grid-row: auto;
+    }
 }
 
-.designHeding {
+.active2 .designHeading {
     grid-column: 1 / 5;
     grid-row: 5;
     flex-direction: column;
     border: #222222 1px solid;
+    @media screen and (max-width: 960px) {
+        grid-column: 1 / 5;
+        grid-row: auto;
+    }
 }
 
 .active2 .designDescription {
     grid-column: 1 / 3;
     grid-row: 6;
+    @media screen and (max-width: 960px) {
+        grid-column: 1 / 5;
+        grid-row: auto;
+    }
 }
 
-.active2 .designDescription >
+.active2 .designLogo {
+    grid-column: 3 / 5;
+    grid-row: 6;
+    @media screen and (max-width: 960px) {
+        grid-column: 1 / 5;
+        grid-row: auto;
+    }
+}
+
+.active2 .designLogo > h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: #5d5d5e -5px 5px 10px ;
+}
+
+.active2 .designLogo > h2 > :nth-child(1) {
+    color: rgb(133, 223, 226);
+}
+
+.active2 .designLogo > h2 > :nth-child(2) {
+    color:orchid;
+}
+
+.active2 .designBefore {
+    grid-column: 1 / 3;
+    grid-row: 7;
+    text-align: center;
+    @media screen and (max-width: 960px) {
+        grid-column: 1 / 5;
+        grid-row: auto;
+    }
+}
+
+.active2 .designAnswer {
+    grid-column: 3 / 5;
+    grid-row: 7;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    line-height: 1.2rem;
+    @media screen and (max-width: 960px) {
+        grid-column: 1 / 5;
+        grid-row: auto;
+    }
+}
 
 .active2 .pageLimit {
     grid-column: 3 / 5;
-    grid-row: 7;
+    grid-row: 11;
+    @media screen and (max-width: 960px) {
+        grid-column: 2 / 5;
+        grid-row: auto;
+    }
 }
 
+.active2 .designImage {
+    grid-column: 1 / 4;
+    grid-row: 8;
+    display: flex;
+    gap: 40px;
+    @media screen and (max-width: 960px) {
+        grid-column: 1 / 5;
+        grid-row: auto;
+        flex-direction: column;
+    }
+}
 
+.active2 .designMisc {
+    grid-column: 4 / 5;
+    grid-row: 8;
+    @media screen and (max-width: 960px) {
+        grid-column: 1 / 5;
+        grid-row: auto;
+    }
+}
 
+.active2 .afterHeading {
+    grid-column: 1 / 5;
+    grid-row: 9;
+    padding-block: 12px;
+    border: #222222 1px solid;
+    @media screen and (max-width: 960px) {
+        grid-column: 1 / 5;
+        grid-row: auto;
+    }
+}
+
+.active2 .afterWord {
+    grid-column: 1 / 5;
+    grid-row: 10;
+    padding-inline: 120px;
+    line-height: 1.5rem;
+    @media screen and (max-width: 960px) {
+        grid-column: 1 / 5;
+        grid-row: auto;
+        padding-inline: 10px;
+    }
+}
+
+/* #endregion */
+
+/* #region header activity3.php */
+
+.active3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 40px;
+}
+
+.active3 .projectFacts {
+    grid-column: 1 / 2;
+    grid-row: auto;
+    @media screen and (max-width: 960px) {
+        grid-column: 1 / 5;
+    }
+}
+
+.active3 .projectIntro {
+    grid-column: 2 / 5;
+    grid-row: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    line-height: 1.2rem;
+    @media screen and (max-width: 960px) {
+        grid-column: 1 / 5;
+    }
+}
+
+.active3 .structureHeading {
+    grid-column: 1 / 5;
+    grid-row: auto;
+    flex-direction: column;
+    border: #222222 1px solid;
+}
+
+.active3 .structureDescription {
+    grid-column: 1 / 3;
+    grid-row: auto;
+    @media screen and (max-width: 960px) {
+        grid-column: 1 / 5;
+        grid-row: 5;
+    }
+}
+
+.active3 .structureImage {
+    grid-column: 1 / 3;
+    grid-row: auto;
+    @media screen and (max-width: 960px) {
+        grid-column: 1 / 5;
+    }
+}
+
+.active3 .scriptCode {
+    grid-column: 3 / 5;
+    grid-row: 3 / 5;
+    @media screen and (max-width: 960px) {
+        grid-column: 1 / 5;
+        grid-row: 6;
+    }
+}
+
+.active3 .scriptCode > pre {
+    max-height: 700px;
+    overflow: scroll;
+    @media screen and (max-width: 960px) {
+        max-height: 350px;
+    }
+}
+
+.active3 .scriptHeading {
+    flex-direction: column;
+    grid-column: 1 / 5;
+    grid-row: auto;
+    border: 1px solid #222222;
+}
+
+.active3 .scriptDescription {
+    grid-column: 1 / 3;
+    grid-row: auto;
+    @media screen and (max-width: 960px) {
+        grid-column: 1 / 5;
+    }
+}
+
+.active3 .scriptImage {
+    grid-column: 3 / 5;
+    grid-row: 6 / 7;
+    @media screen and (max-width: 960px) {
+        grid-column: 1 / 5;
+        grid-row: 9;
+    }
+}
+
+.active3 .teamHeading {
+    grid-column: 1 / 5;
+    grid-row: auto;
+    flex-direction: column;
+    border: 1px solid #222222;
+}
+
+.active3 .readerDescription {
+    grid-column: 1 / 3;
+    grid-row: auto;
+    @media screen and (max-width: 960px) {
+        grid-column: 1 / 5;
+    }
+}
+
+.active3 .teamDescription {
+    grid-column: 3 / 5;
+    grid-row: auto;
+    @media screen and (max-width: 960px) {
+        grid-column: 1 / 5;
+    }
+}
+
+.active3 .afterHeading {
+    grid-column: 1 / 5;
+    grid-row: auto;
+    padding-block: 12px;
+    border: 1px solid #222222;
+}
+
+.active3 .afterWord {
+    grid-column: 1 / 5;
+    grid-row: auto;
+    padding-inline: 120px;
+    line-height: 1.5rem;
+    @media screen and (max-width: 960px) {
+        padding-inline: 10px;
+    }
+}
+
+.active3 .pageLimit {
+    grid-column: 3 / 5;
+    grid-row: auto;
+    @media screen and (max-width: 960px) {
+        grid-column: 2 / 5;
+    }
+}
 /* #endregion */

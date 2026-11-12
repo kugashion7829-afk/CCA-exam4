@@ -2,7 +2,9 @@
 <section id="activitiesSection">
     <div id="portfolio" class="designWrap">
 
+        <!-- 額縁 -->
         <div class="activeTitle borderDesign">
+            <!-- フレーム -->
             <div>
                 <!-- この中にタイトルを追加 -->
 
@@ -11,8 +13,12 @@
             </div>
         </div>
 
+        <!-- 額縁 -->
         <div class="activeInfo borderDesign">
-            <div>
+            <!-- フレーム -->
+            <div class="canvasTexture">
+
+                <!-- 下地 -->
                 <div class="gridDesign active1">
                     <!-- この中に要素を追加 -->
 
@@ -34,19 +40,19 @@
 
                     <div class="transitionImages">
                         <div class="imageWrap">
-                            <img class="image modalTrigger" src="../images/portfolio2.jpg">
+                            <img class="image modalTrigger buttonFrame" loading="lazy" src="../images/portfolio2.jpg" alt="遷移前の画面">
                         </div>
 
                         <p class="flex">&rarr;</p>
 
                         <div class="imageWrap">
-                            <img class="image modalTrigger" src="../images/portfolio2-2.jpg">
+                            <img class="image modalTrigger buttonFrame" loading="lazy" src="../images/portfolio2-2.jpg" alt="遷移中の画面 画面に複数のピクセルが現れ左上から右下にかけて表示するものが変わっていく様子">
                         </div>
 
                         <p class="flex">&rarr;</p>
 
                         <div class="imageWrap">
-                            <img class="image modalTrigger" src="../images/portfolio3.jpg">
+                            <img class="image modalTrigger buttonFrame" loading="lazy" src="../images/portfolio3.jpg" alt="遷移後の画面">
                         </div>
                     </div>
                     
@@ -117,7 +123,7 @@ function pageVisible (pageNumber) {
                     </div>
 
                     <div class="aboutImage imageWrap">
-                        <img class="image modalTrigger" src="../images/portfolio1.jpg">
+                        <img class="image modalTrigger buttonFrame" loading="lazy" src="../images/portfolio1.jpg" alt="トップページのイメージ 作者の自己紹介が記載されている">
                     </div>
 
                     <div class="aboutDescription">
@@ -132,13 +138,13 @@ function pageVisible (pageNumber) {
 
                     <div class="galleryImages">
                         <div class="imageWrap">
-                            <img class="image modalTrigger" src="../images/portfolio2.jpg">
+                            <img class="image modalTrigger buttonFrame" loading="lazy" src="../images/portfolio2.jpg" alt="ギャラリーページのイメージ画像 VRChatで撮影した写真が掲載されている">
                         </div>
 
                         <p>&rarr;</p>
 
                         <div class="imageWrap">
-                            <img class="image modalTrigger" src="../images/portfolio2-3.jpg">
+                            <img class="image modalTrigger buttonFrame" loading="lazy" src="../images/portfolio2-3.jpg" alt="VRChatで撮影した写真を拡大表示している">
                         </div>
                     </div>
 
@@ -157,11 +163,11 @@ function pageVisible (pageNumber) {
 
                     <div class="skillImages">
                         <div class="imageWrap">
-                            <img class="image modalTrigger" src="../images/portfolio3.jpg">
+                            <img class="image modalTrigger buttonFrame" loading="lazy" src="../images/portfolio3.jpg" alt="作者の能力についてのイメージ画像 HTMLについて書かれている">
                         </div>
 
                         <div class="imageWrap">
-                            <img class="image modalTrigger" src="../images/portfolio3-2.jpg">
+                            <img class="image modalTrigger buttonFrame" loading="lazy" src="../images/portfolio3-2.jpg" alt="作者の能力についてのイメージ画像 画像編集について書かれている">
                         </div>
                     </div>
 
@@ -184,7 +190,7 @@ function pageVisible (pageNumber) {
 
                     <div class="linkImages">
                         <div class="imageWrap">
-                            <img class="image" src="../images/portfolio4.jpg">
+                            <img class="image buttonFrame modalTrigger" loading="lazy" src="../images/portfolio4.jpg" alt="ほかのページへのリンクが載っているページのイメージ画像">
                         </div>
 
                     </div>
@@ -212,6 +218,7 @@ function pageVisible (pageNumber) {
                     </div>
 
                 </div>
+
             </div>
         </div>
 
